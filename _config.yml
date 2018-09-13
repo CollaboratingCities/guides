@@ -1,16 +1,22 @@
+---
 title: 'Collaborating Cities: Digital Transformation Toolkit'
-
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 defaults:
-  -
-    scope:
-      path: "guides"
-    values:
-      layout: "guides"
-
-include: [README.md,CONTRIBUTING.md]
+- scope:
+    path: guides
+  values:
+    layout: guides
+include:
+- README.md
+- CONTRIBUTING.md
 permalink: pretty
-
-# these are specific to the use of the Amsterdam Jekyll Theme
 remote_theme: amsterdam/amsterdam-jekyll-theme
 headerHideLogo: true
 toc: true
